@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "custom-1767529984245": {
+      "name": "customize",
+      "kind": "custom",
+      "references": [],
+      "texStatement": "a"
+    },
+    "SphereEversion.Main.Smale": {
+      "size": 1.2,
+      "effect": "orbiting-moons"
+    },
+    "SphereEversion.ToMathlib.Geometry.Manifold.Immersion.Immersion": {
+      "effect": "sparkle-field"
+    },
+    "custom-1767530338881": {
+      "name": "Custom",
+      "kind": "custom",
+      "references": []
+    }
+  },
+  "edges": {
+    "custom-1767529984245->SphereEversion.Main.Smale": {
+      "source": "custom-1767529984245",
+      "target": "SphereEversion.Main.Smale",
+      "type": "custom"
+    },
+    "custom-1767529984245->SphereEversion.ToMathlib.Geometry.Manifold.Immersion.Immersion": {
+      "source": "custom-1767529984245",
+      "target": "SphereEversion.ToMathlib.Geometry.Manifold.Immersion.Immersion",
+      "type": "custom"
+    },
+    "SphereEversion.Main.Smale->SphereEversion.ToMathlib.Geometry.Manifold.Immersion.Immersion": {
+      "style": "spring"
+    },
+    "SphereEversion.Global.Immersion.immersionRel_satisfiesHPrincipleWith->SphereEversion.ToMathlib.Geometry.Manifold.Immersion.Immersion": {
+      "source": "SphereEversion.Global.Immersion.immersionRel_satisfiesHPrincipleWith",
+      "target": "SphereEversion.ToMathlib.Geometry.Manifold.Immersion.Immersion",
+      "type": "custom",
+      "style": "spring"
+    }
+  },
+  "macros": {}
+}

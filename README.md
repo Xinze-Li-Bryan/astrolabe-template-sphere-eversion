@@ -1,40 +1,61 @@
-# The sphere eversion project
+# Sphere Eversion - Astrolabe Template
 
-This project formalizes the proof of a theorem implying the existence of sphere
-eversions. It was carried out by Patrick Massot, Floris van Doorn and Oliver
-Nash, with crucial help from the wider Lean community. The proof of the main theorem was completed on November 12th 2022.
-Details can be found on the [project website.](https://leanprover-community.github.io/sphere-eversion/)
+[![Astrolabe](https://img.shields.io/badge/Visualize%20with-Astrolabe-purple)](https://github.com/Xinze-Li-Bryan/Astrolabe)
+[![Original Project](https://img.shields.io/badge/Original-leanprover--community%2Fsphere--eversion-blue)](https://github.com/leanprover-community/sphere-eversion)
 
-This project originally used Lean 3 but was ported to Lean 4 with crucial help from Yury Kudryashov.
+An Astrolabe visualization template for the Sphere Eversion formalization in Lean 4.
 
-# Build the Lean files
+## About This Template
 
-To build the Lean files of this project, you need to have a working version of Lean.
-See [the installation instructions](https://leanprover-community.github.io/get_started.html) (under Regular install).
+This repository is an [Astrolabe](https://github.com/Xinze-Li-Bryan/Astrolabe) template based on the [Sphere Eversion project](https://github.com/leanprover-community/sphere-eversion).
 
-To build the project, run `lake exe cache get` and then `lake build`.
+**What's included:**
+- Lean 4 source code formalizing the existence of sphere eversions
+- Pre-configured `.astrolabe/` directory with canvas layout and node positions
 
-# Build the blueprint
+**What's removed:**
+- Blueprint LaTeX files
+- Documentation build scripts
 
-To build the web version of the blueprint, you need a working LaTeX installation.
-Furthermore, you need some packages:
+## Acknowledgments
+
+Thanks to Patrick Massot, Floris van Doorn, Oliver Nash, and Yury Kudryashov for creating and porting this formalization. The proof of the main theorem was completed on November 12th 2022. See the [original repository](https://github.com/leanprover-community/sphere-eversion) and [project website](https://leanprover-community.github.io/sphere-eversion/) for full details.
+
+## Usage with Astrolabe
+
+1. **Get Astrolabe** from [GitHub](https://github.com/Xinze-Li-Bryan/Astrolabe)
+
+2. **Clone this template:**
+   ```bash
+   git clone https://github.com/Xinze-Li-Bryan/astrolabe-template-sphere-eversion.git
+   cd astrolabe-template-sphere-eversion
+   ```
+
+3. **Build the Lean project** (requires [Lean 4](https://docs.lean-lang.org/lean4/doc/quickstart.html)):
+   ```bash
+   lake exe cache get
+   lake build
+   ```
+
+4. **Open in Astrolabe** - Launch Astrolabe and open this folder
+
+## Project Structure
+
 ```
-sudo apt install graphviz libgraphviz-dev
-pip3 install invoke pandoc
-cd .. # go to folder where you are happy clone git repos
-git clone git@github.com:plastex/plastex
-pip3 install ./plastex
-git clone git@github.com:PatrickMassot/leanblueprint
-pip3 install ./leanblueprint
-cd sphere-eversion
+astrolabe-template-sphere-eversion/
+├── .astrolabe/           # Astrolabe configuration
+│   ├── canvas.json       # Node positions, camera state
+│   ├── meta.json         # Node styles, notes
+│   └── graph.json        # Parsed dependency cache
+├── SphereEversion/       # Lean source files
+├── lakefile.toml         # Lake build config
+└── lean-toolchain        # Lean version
 ```
 
-To actually build the blueprint, run
-```
-lake exe cache get
-lake build
-inv all
-```
+## Feedback
 
-To view the web-version of the blueprint locally, run `inv serve` and navigate to
-`http://localhost:8000/` in your favorite browser.
+We welcome everyone to explore Lean 4 projects with Astrolabe! If you have any issues or suggestions, please report them to the [Astrolabe main repository](https://github.com/Xinze-Li-Bryan/Astrolabe/issues).
+
+## License
+
+See [LICENSE](LICENSE) file for details.

@@ -1,0 +1,31 @@
+{
+  "version": "1.1",
+  "updated_at": "2026-01-04T12:40:18.540843Z",
+  "visible_nodes": [
+    "custom-1767529984245",
+    "custom-1767530338881",
+    "SphereEversion.Global.Immersion.immersionRel_satisfiesHPrincipleWith",
+    "SphereEversion.Global.Immersion.sphere_eversion",
+    "SphereEversion.Global.Gromov.RelMfld.Ample.satisfiesHPrincipleWith",
+    "SphereEversion.Global.Relation.RelMfld.SatisfiesHPrincipleWith",
+    "SphereEversion.Global.Immersion.immersionRel",
+    "SphereEversion.Global.Immersion.immersionRel_ample",
+    "SphereEversion.Global.Immersion.immersionRel_open",
+    "SphereEversion.ToMathlib.Geometry.Manifold.Immersion.Immersion"
+  ],
+  "positions": {},
+  "viewport": {
+    "camera_position": [
+      25.392887528146844,
+      16.628511999486093,
+      1.7627543102359704
+    ],
+    "camera_target": [
+      5.393738389106174,
+      0.0,
+      9.748600845576986
+    ],
+    "zoom": 1.0,
+    "selected_node_id": "SphereEversion.Global.Immersion.immersionRel_satisfiesHPrincipleWith"
+  }
+}
