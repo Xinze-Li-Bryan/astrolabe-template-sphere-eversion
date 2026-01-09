@@ -5,6 +5,8 @@
 
 An Astrolabe visualization template for the Sphere Eversion formalization in Lean 4.
 
+![Astrolabe Preview](docs/images/astrolabe-preview.jpg)
+
 ## About This Template
 
 This repository is an [Astrolabe](https://github.com/Xinze-Li-Bryan/Astrolabe) template based on the [Sphere Eversion project](https://github.com/leanprover-community/sphere-eversion).
