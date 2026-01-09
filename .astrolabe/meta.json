@@ -8,36 +8,94 @@
     },
     "SphereEversion.Main.Smale": {
       "size": 1.2,
-      "effect": "orbiting-moons"
+      "effect": "orbiting-moons",
+      "notes": "## Smale's Sphere Eversion Theorem\n\n### Statement\n\nThere exists a smooth family of maps $f : \\mathbb{R} \\to \\mathbb{S}^2 \\to \\mathbb{R}^3$ such that:\n\n1. $f$ is smooth in both variables\n2. $f_0(x) = x$ (the inclusion map)\n3. $f_1(x) = -x$ (the antipodal map)\n4. Every $f_t$ is an **immersion**\n\n### What This Means\n\nYou can turn a sphere inside-out through a continuous family of immersions! The sphere passes through itself during the eversion, but at every moment the map is locally injective (an immersion).\n\n### Historical Note\n\nStephen Smale proved this theorem in 1958, initially with a non-constructive proof. Later, explicit eversions were found by Bernard Morin and others."
     },
     "SphereEversion.ToMathlib.Geometry.Manifold.Immersion.Immersion": {
-      "effect": "sparkle-field"
+      "effect": "sparkle-field",
+      "notes": "## Immersion\n\n### Definition\n\nA smooth map $f : M \\to M'$ between manifolds is an **immersion** if:\n\n1. $f$ is $C^n$ smooth (`ContMDiff`)\n2. The differential $df_p : T_p M \\to T_{f(p)} M'$ is **injective** at every point $p \\in M$\n\n```lean\nstructure Immersion (f : M → M') (n : WithTop ℕ∞) : Prop where\n  contMDiff : CMDiff n f\n  diff_injective : ∀ p, Injective (mfderiv f p)\n```\n\n### Intuition\n\nAn immersion is a map that is locally injective at the level of tangent spaces. The map itself may self-intersect globally, but infinitesimally (in tangent directions) it never collapses dimensions.\n\n### Examples\n\n- The figure-eight curve in $\\mathbb{R}^2$\n- The inclusion $\\mathbb{S}^2 \\hookrightarrow \\mathbb{R}^3$"
     },
     "custom-1767530338881": {
       "name": "Custom",
       "kind": "custom",
       "references": []
+    },
+    "SphereEversion.Global.Immersion.sphere_eversion": {
+      "notes": "## Sphere Eversion (Formal Statement)\n\n### Lean Statement\n\n```lean\ntheorem sphere_eversion :\n    ∃ f : ℝ → 𝕊² → E,\n      ContMDiff (𝓘(ℝ, ℝ).prod (𝓡 2)) 𝓘(ℝ, E) ∞ ↿f ∧\n      (f 0 = fun x : 𝕊² ↦ (x : E)) ∧\n      (f 1 = fun x : 𝕊² ↦ -(x : E)) ∧\n      ∀ t, Immersion (𝓡 2) 𝓘(ℝ, E) (f t) ∞\n```\n\n### Proof Strategy\n\n1. Construct a **formal eversion** using rotations\n2. Apply the **h-principle** to convert it to a genuine eversion\n3. The h-principle applies because the immersion relation is **open** and **ample**"
+    },
+    "SphereEversion.Global.Immersion.immersionRel": {
+      "notes": "## Immersion Relation\n\n### Definition\n\nThe **immersion relation** is a first-order partial differential relation:\n\n$$\\mathcal{R}_{imm} = \\{\\sigma \\in J^1(M, M') : \\sigma_2 \\text{ is injective}\\}$$\n\nIn Lean:\n```lean\ndef immersionRel : RelMfld I M I' M' :=\n  {σ | Injective σ.2}\n```\n\n### Meaning\n\nA section of the 1-jet bundle belongs to the immersion relation if its linear part (the would-be differential) is injective.\n\n### Why It Matters\n\nGromov's h-principle tells us that if a relation is **open** and **ample**, then formal solutions can be homotoped to genuine solutions."
+    },
+    "SphereEversion.Global.Immersion.immersionRel_ample": {
+      "notes": "## Ampleness of Immersion Relation\n\n### Statement\n\nIf $\\dim M < \\dim M'$, then the immersion relation is **ample**.\n\n### What is Ampleness?\n\nA relation $\\mathcal{R}$ is ample if for every $\\sigma \\in \\mathcal{R}$ and every \"dual pair\" $p$, the **slice**\n$$\\mathcal{R}_{\\sigma,p} = \\{v : \\sigma + p \\otimes v \\in \\mathcal{R}\\}$$\nis an ample subset of the target tangent space.\n\n### Key Insight\n\nFor immersions, the slice is the complement of a proper linear subspace (the image of the kernel). When $\\dim M < \\dim M'$, this complement has **codimension > 1**, making it ample.\n\n### Consequence\n\nAmpleness + openness → **h-principle applies**!"
+    },
+    "SphereEversion.Global.Immersion.immersionRel_open": {
+      "notes": "## Openness of Immersion Relation\n\n### Statement\n\nThe immersion relation is an **open subset** of the 1-jet bundle.\n\n### Proof Idea\n\nThe set of injective linear maps is open in the space of all linear maps (a small perturbation of an injective map is still injective when the target has higher dimension).\n\n### Why It Matters\n\nOpenness is one of the two conditions (along with ampleness) needed to apply Gromov's h-principle."
+    },
+    "SphereEversion.Global.Immersion.immersionRel_satisfiesHPrincipleWith": {
+      "notes": "## H-Principle for Immersions\n\n### Statement\n\nWhen $\\dim M < \\dim M'$, the immersion relation satisfies the **parametric h-principle with approximation**.\n\n### What This Means\n\nGiven:\n- A family of **formal** immersions (formal solutions to the immersion relation)\n- That are genuinely holonomic near a closed set $C$\n\nWe can find:\n- A homotopy to genuine immersions\n- That stays fixed near $C$\n- With controlled approximation error $\\varepsilon$\n\n### Application to Sphere Eversion\n\nWe construct a formal eversion (easy, using rotations), then apply this h-principle to get a genuine eversion."
+    },
+    "SphereEversion.Global.Relation.RelMfld.SatisfiesHPrincipleWith": {
+      "notes": "## Satisfies H-Principle (Definition)\n\n### Formal Definition\n\nA relation $\\mathcal{R}$ **satisfies the h-principle** with parameter space $P$, constraint set $C$, and error bound $\\varepsilon$ if:\n\nFor any family of formal solutions $\\mathcal{F}_0$ parametrized by $P$ that is holonomic near $C$, there exists a homotopy $\\mathcal{F}_t$ such that:\n\n1. $\\mathcal{F}_0$ agrees with the original at $t=0$\n2. $\\mathcal{F}_1$ is **holonomic everywhere** (a genuine solution)\n3. $\\mathcal{F}_t$ is constant near $C$\n4. $\\mathcal{F}_t$ stays $\\varepsilon$-close to $\\mathcal{F}_0$\n\n### Intuition\n\nThe h-principle says: \"If you can solve a PDE formally (ignoring integrability), you can solve it genuinely.\""
+    },
+    "SphereEversion.Global.Gromov.RelMfld.Ample.satisfiesHPrincipleWith": {
+      "notes": "## Gromov's Flexibility Theorem\n\n### Statement\n\nIf a first-order partial differential relation $\\mathcal{R}$ is:\n- **Open** (in the 1-jet bundle)\n- **Ample** (slices have codimension > 1)\n\nThen $\\mathcal{R}$ satisfies the **parametric h-principle with approximation**.\n\n### This is the Core Theorem\n\nThis is the main abstract result that implies sphere eversion as a corollary. The proof involves:\n- Local convex integration\n- Globalization via patching\n- Careful handling of parameters and constraints\n\n### Historical Note\n\nMikhail Gromov developed this theory in the 1970s-80s. It revolutionized the study of partial differential relations."
+    },
+    "SphereEversion.Global.Immersion.formalEversion": {
+      "notes": "## Formal Eversion\n\n### Definition\n\nA **formal eversion** is a homotopy of formal solutions to the immersion relation:\n- At $t=0$: the inclusion $\\mathbb{S}^2 \\hookrightarrow \\mathbb{R}^3$\n- At $t=1$: the antipodal map $x \\mapsto -x$\n\n### Construction\n\nThe formal eversion is built using **rotations**:\n\n$$f_t(x) = (1-\\sigma(t)) \\cdot x + \\sigma(t) \\cdot (-x)$$\n\nwhere $\\sigma$ is a smooth step function, combined with a rotation in the linear part to maintain injectivity of the formal differential.\n\n### Key Point\n\nThis is only a *formal* solution—the actual map $f_t$ may not be an immersion. The h-principle converts it to a genuine one."
+    },
+    "SphereEversion.Global.Immersion.formalEversion_zero": {
+      "notes": "## Formal Eversion at t=0\n\n### Statement\n\n```lean\ntheorem formalEversion_zero (x : 𝕊²) :\n    (formalEversion E ω 0).bs x = x\n```\n\nAt time $t=0$, the formal eversion is the **inclusion map**: it sends each point $x$ on the sphere to itself in $\\mathbb{R}^3$."
+    },
+    "SphereEversion.Global.Immersion.formalEversion_one": {
+      "notes": "## Formal Eversion at t=1\n\n### Statement\n\n```lean\ntheorem formalEversion_one (x : 𝕊²) :\n    (formalEversion E ω 1).bs x = -x\n```\n\nAt time $t=1$, the formal eversion is the **antipodal map**: it sends each point $x$ to $-x$, effectively turning the sphere inside-out."
+    },
+    "SphereEversion.Global.Immersion.formalEversion_hol_near_zero_one": {
+      "notes": "## Holonomicity Near Endpoints\n\n### Statement\n\nThe formal eversion is **holonomic** (genuinely an immersion, not just formally) near $t=0$ and $t=1$.\n\n### Why This Matters\n\nThe h-principle requires the formal solution to be genuinely holonomic near a closed constraint set. Here, the constraint set is $\\{0,1\\} \\times \\mathbb{S}^2$.\n\n### Proof Idea\n\n- Near $t=0$: the smooth step function $\\sigma(t) = 0$, so we have the inclusion (which is a genuine immersion)\n- Near $t=1$: $\\sigma(t) = 1$, so we have the antipodal map (also a genuine immersion)"
+    },
+    "SphereEversion.Global.Relation.RelMfld.SatisfiesHPrincipleWith.bs": {
+      "notes": "## Extracting the Base Map\n\n### Purpose\n\nGiven an h-principle result (a homotopy of formal solutions ending in a holonomic one), this extracts the actual **base map** $f : P \\to M \\to X$.\n\n### Properties Preserved\n\n1. Smoothness in parameters and points\n2. Agreement with original near constraint set\n3. $\\varepsilon$-closeness to original\n4. Being a genuine solution to the relation"
+    },
+    "SphereEversion.ToMathlib.Geometry.Manifold.Immersion.Immersion.contMDiff": {
+      "notes": "## Immersion is Smooth\n\n### Statement\n\nIf $f$ is an immersion, then $f$ is $C^n$ smooth.\n\n```lean\ntheorem Immersion.contMDiff : CMDiff n f\n```\n\nThis is simply extracting the first component of the `Immersion` structure."
+    },
+    "SphereEversion.ToMathlib.Geometry.Manifold.Immersion.Immersion.diff_injective": {
+      "notes": "## Immersion Has Injective Differential\n\n### Statement\n\nIf $f$ is an immersion, then $df_p$ is injective at every point.\n\n```lean\ntheorem Immersion.diff_injective :\n    ∀ p, Injective (mfderiv f p)\n```\n\nThis is the defining property that distinguishes immersions from general smooth maps."
+    },
+    "SphereEversion.Global.Immersion.ContMDiff.uncurry_left": {
+      "notes": "## Uncurrying Smooth Maps\n\n### Statement\n\nIf $f : M \\times M' \\to P$ is smooth, then for any fixed $x \\in M$, the partial application $f(x, -) : M' \\to P$ is also smooth.\n\n### Application\n\nThis is used to show that each $f_t$ in the sphere eversion family is individually smooth, given that the whole family is jointly smooth."
     }
   },
   "edges": {
-    "custom-1767529984245->SphereEversion.Main.Smale": {
-      "source": "custom-1767529984245",
-      "target": "SphereEversion.Main.Smale",
-      "type": "custom"
-    },
     "custom-1767529984245->SphereEversion.ToMathlib.Geometry.Manifold.Immersion.Immersion": {
       "source": "custom-1767529984245",
       "target": "SphereEversion.ToMathlib.Geometry.Manifold.Immersion.Immersion",
       "type": "custom"
     },
     "SphereEversion.Main.Smale->SphereEversion.ToMathlib.Geometry.Manifold.Immersion.Immersion": {
-      "style": "spring"
+      "style": "spring",
+      "notes": "Smale's theorem asserts the existence of a family of **immersions**."
     },
     "SphereEversion.Global.Immersion.immersionRel_satisfiesHPrincipleWith->SphereEversion.ToMathlib.Geometry.Manifold.Immersion.Immersion": {
       "source": "SphereEversion.Global.Immersion.immersionRel_satisfiesHPrincipleWith",
       "target": "SphereEversion.ToMathlib.Geometry.Manifold.Immersion.Immersion",
       "type": "custom",
       "style": "spring"
+    },
+    "SphereEversion.Global.Immersion.sphere_eversion->SphereEversion.Global.Immersion.immersionRel_satisfiesHPrincipleWith": {
+      "notes": "The sphere eversion theorem is proved by applying the h-principle for immersions."
+    },
+    "SphereEversion.Global.Immersion.sphere_eversion->SphereEversion.Global.Immersion.formalEversion": {
+      "notes": "The proof starts with a formal eversion, then applies h-principle."
+    },
+    "SphereEversion.Global.Immersion.immersionRel_satisfiesHPrincipleWith->SphereEversion.Global.Immersion.immersionRel_ample": {
+      "notes": "The h-principle applies because the immersion relation is ample."
+    },
+    "SphereEversion.Global.Immersion.immersionRel_satisfiesHPrincipleWith->SphereEversion.Global.Immersion.immersionRel_open": {
+      "notes": "The h-principle applies because the immersion relation is open."
+    },
+    "SphereEversion.Global.Gromov.RelMfld.Ample.satisfiesHPrincipleWith->SphereEversion.Global.Relation.RelMfld.SatisfiesHPrincipleWith": {
+      "notes": "Gromov's theorem provides the abstract h-principle that we instantiate."
     }
   },
   "macros": {}
