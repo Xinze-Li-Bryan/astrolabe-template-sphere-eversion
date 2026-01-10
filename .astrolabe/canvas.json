@@ -1,40 +1,20 @@
 {
   "version": "1.1",
-  "updated_at": "2026-01-09T09:29:54.606129Z",
-  "visible_nodes": [
-    "custom-1767529984245",
-    "custom-1767530338881",
-    "SphereEversion.Global.Immersion.immersionRel_satisfiesHPrincipleWith",
-    "SphereEversion.Global.Immersion.sphere_eversion",
-    "SphereEversion.Global.Gromov.RelMfld.Ample.satisfiesHPrincipleWith",
-    "SphereEversion.Global.Relation.RelMfld.SatisfiesHPrincipleWith",
-    "SphereEversion.Global.Immersion.immersionRel",
-    "SphereEversion.Global.Immersion.immersionRel_ample",
-    "SphereEversion.Global.Immersion.immersionRel_open",
-    "SphereEversion.ToMathlib.Geometry.Manifold.Immersion.Immersion",
-    "SphereEversion.Main.Smale",
-    "SphereEversion.Global.Immersion.ContMDiff.uncurry_left",
-    "SphereEversion.Global.Immersion.formalEversion",
-    "SphereEversion.Global.Immersion.formalEversion_hol_near_zero_one",
-    "SphereEversion.Global.Immersion.formalEversion_one",
-    "SphereEversion.Global.Immersion.formalEversion_zero",
-    "SphereEversion.Global.Relation.RelMfld.SatisfiesHPrincipleWith.bs",
-    "SphereEversion.ToMathlib.Geometry.Manifold.Immersion.Immersion.contMDiff",
-    "SphereEversion.ToMathlib.Geometry.Manifold.Immersion.Immersion.diff_injective"
-  ],
+  "updated_at": "2026-01-10T13:12:11.615592Z",
+  "visible_nodes": [],
   "positions": {},
   "viewport": {
     "camera_position": [
-      9.021970074924834,
-      0.04582584660444855,
-      13.761630672106675
+      -24.027546545933884,
+      11.239468237030914,
+      21.30465449895265
     ],
     "camera_target": [
-      -5.156641029785556,
-      -2.724227046960942,
-      -0.06926930252560981
+      1.9859988231029568,
+      1.6193526619983327,
+      -0.30776496797719766
     ],
     "zoom": 1.0,
-    "selected_node_id": "SphereEversion.Main.Smale"
+    "selected_node_id": "SphereEversion.Global.Immersion.sphere_eversion"
   }
 }

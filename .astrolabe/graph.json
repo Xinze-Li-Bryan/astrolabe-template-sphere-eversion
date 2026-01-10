@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2026-01-04T12:23:34.357215Z",
+  "generated_at": "2026-01-10T13:10:26.594890Z",
   "ilean_hash": "9a4aa57ec19ed07ffffb015b6faecd2e",
   "nodes": [
     {
@@ -342,156 +342,156 @@
     {
       "id": "SphereEversion.InductiveConstructions._private.SphereEversion.InductiveConstructions.0.T",
       "name": "_private.SphereEversion.InductiveConstructions.0.T",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/InductiveConstructions.lean",
       "line_number": 242,
       "references": [],
       "depends_on_count": 0,
       "used_by_count": 11,
       "depth": 0,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.InductiveConstructions._private.SphereEversion.InductiveConstructions.0.T_eq",
       "name": "_private.SphereEversion.InductiveConstructions.0.T_eq",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/InductiveConstructions.lean",
       "line_number": 245,
       "references": [],
       "depends_on_count": 1,
       "used_by_count": 3,
       "depth": 1,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.InductiveConstructions._private.SphereEversion.InductiveConstructions.0.T_le_succ",
       "name": "_private.SphereEversion.InductiveConstructions.0.T_le_succ",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/InductiveConstructions.lean",
       "line_number": 262,
       "references": [],
       "depends_on_count": 2,
       "used_by_count": 0,
       "depth": 2,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.InductiveConstructions._private.SphereEversion.InductiveConstructions.0.T_lt",
       "name": "_private.SphereEversion.InductiveConstructions.0.T_lt",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/InductiveConstructions.lean",
       "line_number": 254,
       "references": [],
       "depends_on_count": 2,
       "used_by_count": 1,
       "depth": 2,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.InductiveConstructions._private.SphereEversion.InductiveConstructions.0.T_lt_succ",
       "name": "_private.SphereEversion.InductiveConstructions.0.T_lt_succ",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/InductiveConstructions.lean",
       "line_number": 259,
       "references": [],
       "depends_on_count": 1,
       "used_by_count": 2,
       "depth": 1,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.InductiveConstructions._private.SphereEversion.InductiveConstructions.0.T_nonneg",
       "name": "_private.SphereEversion.InductiveConstructions.0.T_nonneg",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/InductiveConstructions.lean",
       "line_number": 278,
       "references": [],
       "depends_on_count": 2,
       "used_by_count": 1,
       "depth": 2,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.InductiveConstructions._private.SphereEversion.InductiveConstructions.0.T_one",
       "name": "_private.SphereEversion.InductiveConstructions.0.T_one",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/InductiveConstructions.lean",
       "line_number": 272,
       "references": [],
       "depends_on_count": 1,
       "used_by_count": 0,
       "depth": 1,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.InductiveConstructions._private.SphereEversion.InductiveConstructions.0.T_pos",
       "name": "_private.SphereEversion.InductiveConstructions.0.T_pos",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/InductiveConstructions.lean",
       "line_number": 274,
       "references": [],
       "depends_on_count": 2,
       "used_by_count": 1,
       "depth": 2,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.InductiveConstructions._private.SphereEversion.InductiveConstructions.0.T_succ_sub",
       "name": "_private.SphereEversion.InductiveConstructions.0.T_succ_sub",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/InductiveConstructions.lean",
       "line_number": 265,
       "references": [],
       "depends_on_count": 1,
       "used_by_count": 1,
       "depth": 1,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.InductiveConstructions._private.SphereEversion.InductiveConstructions.0.mul_T_succ_sub",
       "name": "_private.SphereEversion.InductiveConstructions.0.mul_T_succ_sub",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/InductiveConstructions.lean",
       "line_number": 268,
       "references": [],
       "depends_on_count": 2,
       "used_by_count": 1,
       "depth": 2,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.InductiveConstructions._private.SphereEversion.InductiveConstructions.0.not_T_succ_le",
       "name": "_private.SphereEversion.InductiveConstructions.0.not_T_succ_le",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/InductiveConstructions.lean",
       "line_number": 282,
       "references": [],
       "depends_on_count": 2,
       "used_by_count": 0,
       "depth": 3,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.InductiveConstructions.inductive_construction",
@@ -1140,16 +1140,16 @@
     {
       "id": "SphereEversion.ToMathlib.Equivariant.EquivariantMap.fract_fract",
       "name": "EquivariantMap.fract_fract",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/ToMathlib/Equivariant.lean",
       "line_number": 69,
       "references": [],
       "depends_on_count": 2,
       "used_by_count": 1,
       "depth": 5,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.ToMathlib.Equivariant.EquivariantMap.instCoeFunForallReal",
@@ -1168,16 +1168,16 @@
     {
       "id": "SphereEversion.ToMathlib.Equivariant.EquivariantMap.monotone",
       "name": "EquivariantMap.monotone",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/ToMathlib/Equivariant.lean",
       "line_number": 54,
       "references": [],
       "depends_on_count": 2,
       "used_by_count": 1,
       "depth": 6,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.ToMathlib.Equivariant.EquivariantMap.not_bounded_above",
@@ -1294,16 +1294,16 @@
     {
       "id": "SphereEversion.ToMathlib.Equivariant.linearReparam",
       "name": "linearReparam",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/ToMathlib/Equivariant.lean",
       "line_number": 69,
       "references": [],
       "depends_on_count": 1,
       "used_by_count": 17,
       "depth": 1,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.ToMathlib.Equivariant.linearReparam_eq_one",
@@ -1924,44 +1924,44 @@
     {
       "id": "SphereEversion.Local.OneJet.FamilyJetSec.mk_apply_apply",
       "name": "FamilyJetSec.mk_apply_apply",
-      "kind": "definition",
+      "kind": "instance",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/Local/OneJet.lean",
       "line_number": 157,
       "references": [],
       "depends_on_count": 0,
       "used_by_count": 0,
       "depth": 0,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#38BDF8",
+      "default_size": 0.9,
+      "default_shape": "capsule"
     },
     {
       "id": "SphereEversion.Local.OneJet.FamilyJetSec.mk_apply_f",
       "name": "FamilyJetSec.mk_apply_f",
-      "kind": "definition",
+      "kind": "instance",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/Local/OneJet.lean",
       "line_number": 161,
       "references": [],
       "depends_on_count": 1,
       "used_by_count": 0,
       "depth": 1,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#38BDF8",
+      "default_size": 0.9,
+      "default_shape": "capsule"
     },
     {
       "id": "SphereEversion.Local.OneJet.FamilyJetSec.mk_apply_φ",
       "name": "FamilyJetSec.mk_apply_φ",
-      "kind": "definition",
+      "kind": "instance",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/Local/OneJet.lean",
       "line_number": 165,
       "references": [],
       "depends_on_count": 1,
       "used_by_count": 0,
       "depth": 1,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#38BDF8",
+      "default_size": 0.9,
+      "default_shape": "capsule"
     },
     {
       "id": "SphereEversion.Local.OneJet.FamilyJetSec.φ",
@@ -5116,16 +5116,16 @@
     {
       "id": "SphereEversion.Loops.Basic.Loop.ext",
       "name": "Loop.ext",
-      "kind": "definition",
+      "kind": "instance",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/Loops/Basic.lean",
       "line_number": 50,
       "references": [],
       "depends_on_count": 1,
       "used_by_count": 0,
       "depth": 2,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#38BDF8",
+      "default_size": 0.9,
+      "default_shape": "capsule"
     },
     {
       "id": "SphereEversion.Loops.Basic.Loop.fract_eq",
@@ -5326,16 +5326,16 @@
     {
       "id": "SphereEversion.Loops.Basic.Loop.ofPath",
       "name": "Loop.ofPath",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/Loops/Basic.lean",
       "line_number": 192,
       "references": [],
       "depends_on_count": 3,
       "used_by_count": 8,
       "depth": 2,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.Loops.Basic.Loop.ofPath_continuous_family",
@@ -6180,16 +6180,16 @@
     {
       "id": "SphereEversion.Loops.Surrounding.SurroundingFamily.mono",
       "name": "SurroundingFamily.mono",
-      "kind": "definition",
+      "kind": "structure",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/Loops/Surrounding.lean",
       "line_number": 504,
       "references": [],
       "depends_on_count": 6,
       "used_by_count": 1,
       "depth": 4,
-      "default_color": "#FBBF24",
+      "default_color": "#2DD4BF",
       "default_size": 1.0,
-      "default_shape": "box"
+      "default_shape": "torus"
     },
     {
       "id": "SphereEversion.Loops.Surrounding.SurroundingFamily.one",
@@ -6208,16 +6208,16 @@
     {
       "id": "SphereEversion.Loops.Surrounding.SurroundingFamily.path",
       "name": "SurroundingFamily.path",
-      "kind": "definition",
+      "kind": "structure",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/Loops/Surrounding.lean",
       "line_number": 561,
       "references": [],
       "depends_on_count": 4,
       "used_by_count": 5,
       "depth": 5,
-      "default_color": "#FBBF24",
+      "default_color": "#2DD4BF",
       "default_size": 1.0,
-      "default_shape": "box"
+      "default_shape": "torus"
     },
     {
       "id": "SphereEversion.Loops.Surrounding.SurroundingFamily.path_extend_fract",
@@ -6292,58 +6292,58 @@
     {
       "id": "SphereEversion.Loops.Surrounding.SurroundingFamily.surrounds_of_close_univ",
       "name": "SurroundingFamily.surrounds_of_close_univ",
-      "kind": "definition",
+      "kind": "structure",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/Loops/Surrounding.lean",
       "line_number": 509,
       "references": [],
       "depends_on_count": 8,
       "used_by_count": 1,
       "depth": 8,
-      "default_color": "#FBBF24",
+      "default_color": "#2DD4BF",
       "default_size": 1.0,
-      "default_shape": "box"
+      "default_shape": "torus"
     },
     {
       "id": "SphereEversion.Loops.Surrounding.SurroundingFamily.t_ge_one",
       "name": "SurroundingFamily.t_ge_one",
-      "kind": "definition",
+      "kind": "structure",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/Loops/Surrounding.lean",
       "line_number": 501,
       "references": [],
       "depends_on_count": 3,
       "used_by_count": 1,
       "depth": 4,
-      "default_color": "#FBBF24",
+      "default_color": "#2DD4BF",
       "default_size": 1.0,
-      "default_shape": "box"
+      "default_shape": "torus"
     },
     {
       "id": "SphereEversion.Loops.Surrounding.SurroundingFamily.t_le_zero",
       "name": "SurroundingFamily.t_le_zero",
-      "kind": "definition",
+      "kind": "structure",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/Loops/Surrounding.lean",
       "line_number": 495,
       "references": [],
       "depends_on_count": 3,
       "used_by_count": 2,
       "depth": 4,
-      "default_color": "#FBBF24",
+      "default_color": "#2DD4BF",
       "default_size": 1.0,
-      "default_shape": "box"
+      "default_shape": "torus"
     },
     {
       "id": "SphereEversion.Loops.Surrounding.SurroundingFamily.t_le_zero_eq_b",
       "name": "SurroundingFamily.t_le_zero_eq_b",
-      "kind": "definition",
+      "kind": "structure",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/Loops/Surrounding.lean",
       "line_number": 498,
       "references": [],
       "depends_on_count": 3,
       "used_by_count": 1,
       "depth": 5,
-      "default_color": "#FBBF24",
+      "default_color": "#2DD4BF",
       "default_size": 1.0,
-      "default_shape": "box"
+      "default_shape": "torus"
     },
     {
       "id": "SphereEversion.Loops.Surrounding.SurroundingFamily.t₀",
@@ -6432,16 +6432,16 @@
     {
       "id": "SphereEversion.Loops.Surrounding.SurroundingFamilyIn.reparam",
       "name": "SurroundingFamilyIn.reparam",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/Loops/Surrounding.lean",
       "line_number": 616,
       "references": [],
       "depends_on_count": 14,
       "used_by_count": 1,
       "depth": 10,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.Loops.Surrounding.SurroundingFamilyIn.to_sf",
@@ -8616,16 +8616,16 @@
     {
       "id": "SphereEversion.Global.OneJetSec.FamilyOneJetSec.mk'",
       "name": "FamilyOneJetSec.mk'",
-      "kind": "definition",
+      "kind": "instance",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/Global/OneJetSec.lean",
       "line_number": 198,
       "references": [],
       "depends_on_count": 2,
       "used_by_count": 2,
       "depth": 3,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#38BDF8",
+      "default_size": 0.9,
+      "default_shape": "capsule"
     },
     {
       "id": "SphereEversion.Global.OneJetSec.FamilyOneJetSec.reindex",
@@ -8924,16 +8924,16 @@
     {
       "id": "SphereEversion.Global.OneJetSec.OneJetSec.mk'",
       "name": "OneJetSec.mk'",
-      "kind": "definition",
+      "kind": "instance",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/Global/OneJetSec.lean",
       "line_number": 68,
       "references": [],
       "depends_on_count": 2,
       "used_by_count": 1,
       "depth": 3,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#38BDF8",
+      "default_size": 0.9,
+      "default_shape": "capsule"
     },
     {
       "id": "SphereEversion.Global.OneJetSec.OneJetSec.snd_eq",
@@ -9554,16 +9554,16 @@
     {
       "id": "SphereEversion.Global.OneJetBundle.OneJetBundle.map",
       "name": "OneJetBundle.map",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/Global/OneJetBundle.lean",
       "line_number": 474,
       "references": [],
       "depends_on_count": 2,
       "used_by_count": 8,
       "depth": 2,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.Global.OneJetBundle.OneJetBundle.map_id",
@@ -11346,16 +11346,16 @@
     {
       "id": "SphereEversion.Global.SmoothEmbedding.OpenSmoothEmbedding.id",
       "name": "OpenSmoothEmbedding.id",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/Global/SmoothEmbedding.lean",
       "line_number": 181,
       "references": [],
       "depends_on_count": 7,
       "used_by_count": 0,
       "depth": 2,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.Global.SmoothEmbedding.OpenSmoothEmbedding.injective",
@@ -12228,30 +12228,30 @@
     {
       "id": "SphereEversion.Global.LocalisationData.LocalisationData.lf_φ",
       "name": "LocalisationData.lf_φ",
-      "kind": "definition",
+      "kind": "structure",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/Global/LocalisationData.lean",
       "line_number": 32,
       "references": [],
       "depends_on_count": 0,
       "used_by_count": 1,
       "depth": 0,
-      "default_color": "#FBBF24",
+      "default_color": "#2DD4BF",
       "default_size": 1.0,
-      "default_shape": "box"
+      "default_shape": "torus"
     },
     {
       "id": "SphereEversion.Global.LocalisationData.LocalisationData.ε",
       "name": "LocalisationData.ε",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/Global/LocalisationData.lean",
       "line_number": 150,
       "references": [],
       "depends_on_count": 2,
       "used_by_count": 4,
       "depth": 4,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.Global.LocalisationData.LocalisationData.ε_cont",
@@ -15154,16 +15154,16 @@
     {
       "id": "SphereEversion.ToMathlib.Analysis.Calculus.WithTop.le_self_mul",
       "name": "WithTop.le_self_mul",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/ToMathlib/Analysis/Calculus.lean",
       "line_number": 156,
       "references": [],
       "depends_on_count": 0,
       "used_by_count": 0,
       "depth": 0,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.ToMathlib.Analysis.Calculus.const_mul_one_div_lt",
@@ -16652,44 +16652,44 @@
     {
       "id": "SphereEversion.ToMathlib.Analysis.InnerProductSpace.Projection.Submodule.projSpanOrthogonal",
       "name": "projSpanOrthogonal",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/ToMathlib/Analysis/InnerProductSpace/Projection/Submodule.lean",
       "line_number": 55,
       "references": [],
       "depends_on_count": 0,
       "used_by_count": 1,
       "depth": 0,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.ToMathlib.Analysis.InnerProductSpace.Projection.Submodule.spanLine",
       "name": "spanLine",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/ToMathlib/Analysis/InnerProductSpace/Projection/Submodule.lean",
       "line_number": 47,
       "references": [],
       "depends_on_count": 0,
       "used_by_count": 1,
       "depth": 0,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.ToMathlib.Analysis.InnerProductSpace.Projection.Submodule.spanOrthogonal",
       "name": "spanOrthogonal",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/ToMathlib/Analysis/InnerProductSpace/Projection/Submodule.lean",
       "line_number": 52,
       "references": [],
       "depends_on_count": 0,
       "used_by_count": 1,
       "depth": 0,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.ToMathlib.Analysis.InnerProductSpace.Projection.Submodule.span_singleton_eq_span_singleton_of_ne",
@@ -16974,16 +16974,16 @@
     {
       "id": "SphereEversion.ToMathlib.Geometry.Manifold.VectorBundle.Misc.Bundle.Trivial.trivializationAt",
       "name": "Bundle.Trivial.trivializationAt",
-      "kind": "definition",
+      "kind": "theorem",
       "file_path": "/Users/lixinze/sphere-eversion/SphereEversion/ToMathlib/Geometry/Manifold/VectorBundle/Misc.lean",
       "line_number": 75,
       "references": [],
       "depends_on_count": 0,
       "used_by_count": 2,
       "depth": 0,
-      "default_color": "#FBBF24",
-      "default_size": 1.0,
-      "default_shape": "box"
+      "default_color": "#A855F7",
+      "default_size": 1.2,
+      "default_shape": "sphere"
     },
     {
       "id": "SphereEversion.ToMathlib.Geometry.Manifold.VectorBundle.Misc.Bundle.Trivial.trivialization_continuousLinearMapAt",
